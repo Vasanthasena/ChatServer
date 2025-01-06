@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Add any dependencies here if needed
+}
+
+application {
+    mainClass = 'Main'
+}
+
+tasks.named('run') {
+    doFirst {
+        args = []
+    }
+}
